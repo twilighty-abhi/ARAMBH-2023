@@ -453,7 +453,7 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
+  width: device-width;
   height: 100vh;
   background: url(../img/hero-bg.jpg) top center;
   background-size: cover;
@@ -463,7 +463,7 @@ h6 {
 
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    background-attachment: window;
   }
 }
 
@@ -693,19 +693,20 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Speakers Section
+# events Section
 --------------------------------------------------------------*/
-#speakers {
+#events {
   padding: 60px 0 30px 0;
 }
 
-#speakers .speaker {
+#events .event {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  border-radius: 30px;
 }
 
-#speakers .speaker .details {
+#events .event .details {
   background: rgba(6, 12, 34, 0.76);
   position: absolute;
   left: 0;
@@ -716,57 +717,57 @@ h6 {
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#speakers .speaker .details h3 {
+#events .event .details h3 {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-#speakers .speaker .details p {
+#events .event .details p {
   color: #fff;
   font-size: 15px;
   margin-bottom: 10px;
   font-style: italic;
 }
 
-#speakers .speaker .details .social {
+#events .event .details .social {
   height: 40px;
 }
 
-#speakers .speaker .details .social i {
+#events .event .details .social i {
   line-height: 0;
   margin: 0 2px;
 }
 
-#speakers .speaker .details a {
+#events .event .details a {
   color: #fff;
 }
 
-#speakers .speaker .details a:hover {
+#events .event .details a:hover {
   color: #f82249;
 }
 
-#speakers .speaker:hover .details {
+#events .event:hover .details {
   bottom: 0;
 }
 
-#speakers-details {
+#events-details {
   padding: 60px 0;
 }
 
-#speakers-details .details h2 {
+#events-details .details h2 {
   color: #112363;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-#speakers-details .details .social {
+#events-details .details .social {
   margin-bottom: 15px;
 }
 
-#speakers-details .details .social a {
+#events-details .details .social a {
   background: #e9edfb;
   color: #112363;
   line-height: 1;
@@ -780,17 +781,17 @@ h6 {
   justify-content: center;
 }
 
-#speakers-details .details .social a:hover {
+#events-details .details .social a:hover {
   background: #f82249;
   color: #fff;
 }
 
-#speakers-details .details .social a i {
+#events-details .details .social a i {
   font-size: 16px;
   line-height: 0;
 }
 
-#speakers-details .details p {
+#events-details .details p {
   color: #112363;
   font-size: 15px;
   margin-bottom: 10px;
@@ -808,12 +809,12 @@ h6 {
   margin: auto;
   display: block;
   border-bottom: 0;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #schedule .nav-tabs li {
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 #schedule .nav-tabs a {
@@ -881,7 +882,7 @@ h6 {
   display: inline-block;
 }
 
-#schedule .schedule-item .speaker {
+#schedule .schedule-item .event {
   width: 60px;
   height: 60px;
   overflow: hidden;
@@ -890,7 +891,7 @@ h6 {
   margin: 0 10px 10px 0;
 }
 
-#schedule .schedule-item .speaker img {
+#schedule .schedule-item .event img {
   height: 100%;
   transform: translateX(-50%);
   margin-left: 50%;
@@ -1027,7 +1028,7 @@ h6 {
 
 #buy-tickets .card {
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
 }
